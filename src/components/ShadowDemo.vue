@@ -1,12 +1,14 @@
 <template>
   <div class="wrapper">
+    {{shadowFilterArray}}
+    {{shadowBoxArray}}
     <div class="example-wrapper">
       <Example
         index="3"
         shape="rectangle"
-        :filter-shadow="shadowFilterArray[2]"
-        :box-shadow="shadowBoxArray[2]"
-        :caption-color="captionColor"
+        :filterShadow="shadowFilterArray[2]"
+        :boxShadow="shadowBoxArray[2]"
+        :captionColor="captionColor"
       >
         High Elevation
       </Example>
@@ -15,9 +17,9 @@
       <Example
         index="2"
         shape="rectangle"
-        :filter-shadow="shadowFilterArray[1]"
-        :box-shadow="shadowBoxArray[1]"
-        :caption-color="captionColor"
+        :filterShadow="shadowFilterArray[1]"
+        :boxShadow="shadowBoxArray[1]"
+        :captionColor="captionColor"
       >
         Medium Elevation
       </Example>
@@ -26,9 +28,9 @@
       <Example
         index="1"
         shape="rectangle"
-        :filter-shadow="shadowFilterArray[0]"
-        :box-shadow="shadowBoxArray[0]"
-        :caption-color="captionColor"
+        :filterShadow="shadowFilterArray[0]"
+        :boxShadow="shadowBoxArray[0]"
+        :captionColor="captionColor"
       >
         Low Elevation
       </Example>
